@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Temperature Converter</title>
+    <img src="data:image/jpeg;base64,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" class="bg" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        .converter {
+            margin: 20px auto;
+            max-width: 400px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="converter">
+        <h1>Temperature Converter</h1>
+        <label for="inputTemp">Enter Temperature:</label>
+        <input type="number" id="inputTemp" placeholder="Enter temperature" /></br>
+
+        <label for="fromUnit">From Unit:</label>
+        <select id="fromUnit">
+            <option value="celsius">Celsius</option>
+            <option value="fahrenheit">Fahrenheit</option>
+            <option value="kelvin">Kelvin</option>
+        </select>
+
+        <label for="toUnit">To Unit:</label>
+        <select id="toUnit">
+            <option value="celsius">Celsius</option>
+            <option value="fahrenheit">Fahrenheit</option>
+            <option value="kelvin">Kelvin</option>
+        </select></br>
+
+        <button onclick="convertTemperature()">Convert</button>
+
+        <div id="result"></div>
+    </div>
+
+    <script>
+        function convertTemperature() {
+            const inputTemp = parseFloat(document.getElementById("inputTemp").value);
+            const fromUnit = document.getElementById("fromUnit").value;
+            const toUnit = document.getElementById("toUnit").value;
+            let result;
+
+            if (fromUnit === "celsius") {
+                if (toUnit === "fahrenheit") {
+                    result = (inputTemp * 9 / 5) + 32;
+                } else if (toUnit === "kelvin") {
+                    result = inputTemp + 273.15;
+                } else {
+                    result = inputTemp;
+                }
+            } else if (fromUnit === "fahrenheit") {
+                if (toUnit === "celsius") {
+                    result = (inputTemp - 32) * 5 / 9;
+                } else if (toUnit === "kelvin") {
+                    result = (inputTemp - 32) * 5 / 9 + 273.15;
+                } else {
+                    result = inputTemp;
+                }
+            } else if (fromUnit === "kelvin") {
+                if (toUnit === "celsius") {
+                    result = inputTemp - 273.15;
+                } else if (toUnit === "fahrenheit") {
+                    result = (inputTemp - 273.15) * 9 / 5 + 32;
+                } else {
+                    result = inputTemp;
+                }
+            } else {
+                result = inputTemp;
+            }
+
+            document.getElementById("result").innerHTML = `${inputTemp} ${fromUnit} is ${result.toFixed(2)} ${toUnit}`;
+        }
+    </script>
+</body>
+
+</html>

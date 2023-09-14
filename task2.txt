@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Color Generator</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        #color-box {
+            width: 200px;
+            height: 200px;
+            background-color: #3498db;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #fff;
+            font-size: 24px;
+        }
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #2ecc71;
+            border: none;
+            color: #fff;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="color-box">
+        <div id="color-code">#3498db</div>
+        <button onclick="generateRandomColor()">Generate Color</button>
+        <button onclick="copyToClipboard()">Copy Color</button>
+    </div>
+    
+    <script>
+        function generateRandomColor() {
+            const letters = "0123456789ABCDEF";
+            let color = "#";
+            for (let i = 0; i < 6; i++) {
+                color += letters[Math.floor(Math.random() * 16)];
+            }
+            document.body.style.backgroundColor = color;
+            document.getElementById("color-box").style.backgroundColor = color;
+            document.getElementById("color-code").textContent = color;
+        }
+
+        function copyToClipboard() {
+            const colorCode = document.getElementById("color-code").textContent;
+            const tempInput = document.createElement("input");
+            tempInput.value = colorCode;
+            document.body.appendChild(tempInput);
+            tempInput.select();
+            document.execCommand("copy");
+            document.body.removeChild(tempInput);
+            alert(`Color code "${colorCode}" copied to clipboard!`);
+        }
+    </script>
+</body>
+</html>
